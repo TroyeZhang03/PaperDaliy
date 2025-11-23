@@ -1,0 +1,40 @@
+name: Daily Paper Fetch
+
+on:
+  schedule:
+    - cron: '0 23 * * *' # 每天国际时间23点（北京时间早上7点）运行
+  workflow_dispatch: # 允许你手动点击按钮测试运行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许写入权限以更新 JSON 文件
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run script
+      env:
+        # 这里对应你在 main.py 里写的变量名
+        AI_API_KEY: ${{ secrets.AI_API_KEY }}
+      run: python main.py
+
+    - name: Commit and Push JSON
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        # 如果生成了 latest_papers.json 就提交，否则不报错
+        git add latest_papers.json
+        git commit -m "Update papers" || exit 0
+        git push
