@@ -4,39 +4,39 @@
     "url": "http://arxiv.org/abs/2512.16923v1",
     "abstract_en": "Depth-of-field control is essential in photography, but getting the perfect focus often takes several tries or special equipment. Single-image refocusing is still difficult. It involves recovering sharp content and creating realistic bokeh. Current methods have significant drawbacks. They need all-in-focus inputs, depend on synthetic data from simulators, and have limited control over aperture. We introduce Generative Refocusing, a two-step process that uses DeblurNet to recover all-in-focus images from various inputs and BokehNet for creating controllable bokeh. Our main innovation is semi-supervised training. This method combines synthetic paired data with unpaired real bokeh images, using EXIF metadata to capture real optical characteristics beyond what simulators can provide. Our experiments show we achieve top performance in defocus deblurring, bokeh synthesis, and refocusing benchmarks. Additionally, our Generative Refocusing allows text-guided adjustments and custom aperture shapes.",
     "date": "2025-12-18",
-    "summary_cn": "在摄影中，精准控制景深并获得完美对焦效果通常非常困难。现有单图像重对焦方法存在诸多不足，如需要全焦输入、依赖模拟器合成数据且光圈控制有限。为此，本文提出生成式重对焦技术，通过DeblurNet和BokehNet两步实现全焦图像恢复和可控散景合成。其核心创新是半监督训练策略，融合合成数据与利用EXIF元数据的真实散景图像，从而更好地模拟真实光学特性。实验表明，该方法在多项任务中表现优异，并支持文本引导调整和自定义光圈形状。",
-    "one_sentence": "本文提出了一种名为生成式重对焦的两阶段方法，其核心创新在于结合合成数据和利用EXIF元数据的真实散景图像进行半监督训练，以克服现有方法的局限。"
+    "summary_cn": "在摄影中，单图像重对焦技术面临全焦输入依赖、合成数据局限和光圈控制不足等挑战。本文提出生成式重对焦方法，通过DeblurNet恢复全焦图像，再由BokehNet生成可控散景。其关键创新是半监督训练策略，融合合成数据与真实散景图像的EXIF信息，从而超越模拟器局限，精准复现光学特性。实验表明，该方法在多个基准测试中均取得领先性能，并能实现文本引导调整和自定义光圈形状。",
+    "one_sentence": "本文提出了一种名为生成式重对焦的两阶段方法，其核心创新在于结合合成配对数据与未配对的真实散景图像进行半监督训练，以利用EXIF数据捕捉真实光学特性。"
   },
   {
     "title": "The World is Your Canvas: Painting Promptable Events with Reference Images, Trajectories, and Text",
     "url": "http://arxiv.org/abs/2512.16924v1",
     "abstract_en": "We present WorldCanvas, a framework for promptable world events that enables rich, user-directed simulation by combining text, trajectories, and reference images. Unlike text-only approaches and existing trajectory-controlled image-to-video methods, our multimodal approach combines trajectories -- encoding motion, timing, and visibility -- with natural language for semantic intent and reference images for visual grounding of object identity, enabling the generation of coherent, controllable events that include multi-agent interactions, object entry/exit, reference-guided appearance and counterintuitive events. The resulting videos demonstrate not only temporal coherence but also emergent consistency, preserving object identity and scene despite temporary disappearance. By supporting expressive world events generation, WorldCanvas advances world models from passive predictors to interactive, user-shaped simulators. Our project page is available at: https://worldcanvas.github.io/.",
     "date": "2025-12-18",
-    "summary_cn": "论文介绍了WorldCanvas框架，它是一种支持提示的世界事件生成方法。与仅使用文本或现有轨迹控制的方法不同，该框架融合了轨迹（编码运动、时间和可见性）、自然语言（表达语义意图）和参考图像（提供视觉基础），从而能够生成包含多智能体交互、物体出入、参考引导外观及反直觉事件的连贯可控视频。生成的视频不仅时间连贯，还具备涌现一致性，能在物体暂时消失后保持其身份和场景。WorldCanvas将世界模型从被动预测器推进为可由用户塑造的交互式模拟器。",
-    "one_sentence": "本文提出了WorldCanvas框架，通过结合文本、轨迹和参考图像，实现了用户可引导的、可控的丰富世界事件模拟。"
+    "summary_cn": "论文介绍了一个名为WorldCanvas的新型框架，旨在生成可由用户引导的世界事件模拟。该框架的创新之处在于融合了多种模态信息：用自然语言表达语义意图，用运动轨迹控制物体的运动、时间和可见性，并用参考图像来固定物体的视觉特征。这种方法克服了纯文本或现有轨迹控制方法的局限，能够生成包含多智能体交互、物体进出、外观一致性保持甚至反直觉事件在内的连贯且可控的视频，将世界模型从被动预测工具提升为交互式模拟器。",
+    "one_sentence": "本文提出了WorldCanvas框架，通过结合文本、运动轨迹和参考图像，实现了用户可引导的、可控的丰富世界事件模拟。"
   },
   {
     "title": "Next-Embedding Prediction Makes Strong Vision Learners",
     "url": "http://arxiv.org/abs/2512.16922v1",
     "abstract_en": "Inspired by the success of generative pretraining in natural language, we ask whether the same principles can yield strong self-supervised visual learners. Instead of training models to output features for downstream use, we train them to generate embeddings to perform predictive tasks directly. This work explores such a shift from learning representations to learning models. Specifically, models learn to predict future patch embeddings conditioned on past ones, using causal masking and stop gradient, which we refer to as Next-Embedding Predictive Autoregression (NEPA). We demonstrate that a simple Transformer pretrained on ImageNet-1k with next embedding prediction as its sole learning objective is effective - no pixel reconstruction, discrete tokens, contrastive loss, or task-specific heads. This formulation retains architectural simplicity and scalability, without requiring additional design complexity. NEPA achieves strong results across tasks, attaining 83.8% and 85.3% top-1 accuracy on ImageNet-1K with ViT-B and ViT-L backbones after fine-tuning, and transferring effectively to semantic segmentation on ADE20K. We believe generative pretraining from embeddings provides a simple, scalable, and potentially modality-agnostic alternative to visual self-supervised learning.",
     "date": "2025-12-18",
-    "summary_cn": "受自然语言生成式预训练成功的启发，本研究探索了一种新的视觉自监督学习范式NEPA。该方法摒弃了传统的像素重建或对比学习，转而训练Transformer模型以因果掩码方式预测未来的图像块嵌入。实验表明，仅以此为目标在ImageNet-1k上预训练的模型，无需复杂设计即可在图像分类和语义分割任务上取得优异性能，为视觉学习提供了一种简单、可扩展的替代方案。",
-    "one_sentence": "本文提出了一种名为NEPA的视觉自监督学习方法，通过让模型直接学习预测未来的图像块嵌入，而非重建像素或使用对比学习，来生成有效的视觉表示。"
+    "summary_cn": "受自然语言生成式预训练成功的启发，本研究探索了一种视觉自监督学习新范式NEPA。该方法摒弃了像素重建、离散标记或对比学习等复杂设计，仅通过因果掩码和停止梯度技术，训练Transformer模型根据过去的图像块嵌入来预测未来的嵌入。这种简洁且可扩展的方法在ImageNet-1K图像分类和ADE20K语义分割等任务上取得了优异性能，为视觉学习提供了一种简单有效的替代方案。",
+    "one_sentence": "本文提出了一种名为NEPA的自监督视觉学习方法，通过让模型直接预测未来的图像块嵌入而非生成下游任务特征，实现了从学习表征到学习模型的转变。"
   },
   {
     "title": "EasyV2V: A High-quality Instruction-based Video Editing Framework",
     "url": "http://arxiv.org/abs/2512.16920v1",
     "abstract_en": "While image editing has advanced rapidly, video editing remains less explored, facing challenges in consistency, control, and generalization. We study the design space of data, architecture, and control, and introduce \\emph{EasyV2V}, a simple and effective framework for instruction-based video editing. On the data side, we compose existing experts with fast inverses to build diverse video pairs, lift image edit pairs into videos via single-frame supervision and pseudo pairs with shared affine motion, mine dense-captioned clips for video pairs, and add transition supervision to teach how edits unfold. On the model side, we observe that pretrained text-to-video models possess editing capability, motivating a simplified design. Simple sequence concatenation for conditioning with light LoRA fine-tuning suffices to train a strong model. For control, we unify spatiotemporal control via a single mask mechanism and support optional reference images. Overall, EasyV2V works with flexible inputs, e.g., video+text, video+mask+text, video+mask+reference+text, and achieves state-of-the-art video editing results, surpassing concurrent and commercial systems. Project page: https://snap-research.github.io/easyv2v/",
     "date": "2025-12-18",
-    "summary_cn": "针对视频编辑在一致性、控制和泛化性方面的挑战，本文提出了EasyV2V框架。该框架从数据、模型和控制三方面进行创新：构建了包含伪视频对和过渡监督的多样化训练数据；发现预训练文生视频模型具备编辑能力，仅需序列拼接和轻量LoRA微调即可训练出强大模型；通过单一掩码机制统一了时空控制并支持参考图像。EasyV2V支持多种灵活输入，在视频编辑效果上超越了现有系统。",
-    "one_sentence": "本文提出了EasyV2V框架，通过构建多样化视频数据、简化模型设计（仅需轻量级LoRA微调）并统一时空控制，实现了高效且效果卓越的指令式视频编辑。"
+    "summary_cn": "本文针对视频编辑在一致性、控制和泛化性方面的挑战，提出了EasyV2V框架。该框架从数据、模型和控制三方面进行创新：构建了多样化的视频训练数据对，利用预训练视频模型的编辑能力通过简单微调实现强大性能，并统一了时空控制机制。EasyV2V支持多种输入方式，在视频编辑效果上达到了领先水平。",
+    "one_sentence": "本文提出了EasyV2V框架，通过整合数据构建、简化的模型微调和统一的空间控制机制，实现了高质量、可控的视频编辑。"
   },
   {
     "title": "DVGT: Driving Visual Geometry Transformer",
     "url": "http://arxiv.org/abs/2512.16919v1",
     "abstract_en": "Perceiving and reconstructing 3D scene geometry from visual inputs is crucial for autonomous driving. However, there still lacks a driving-targeted dense geometry perception model that can adapt to different scenarios and camera configurations. To bridge this gap, we propose a Driving Visual Geometry Transformer (DVGT), which reconstructs a global dense 3D point map from a sequence of unposed multi-view visual inputs. We first extract visual features for each image using a DINO backbone, and employ alternating intra-view local attention, cross-view spatial attention, and cross-frame temporal attention to infer geometric relations across images. We then use multiple heads to decode a global point map in the ego coordinate of the first frame and the ego poses for each frame. Unlike conventional methods that rely on precise camera parameters, DVGT is free of explicit 3D geometric priors, enabling flexible processing of arbitrary camera configurations. DVGT directly predicts metric-scaled geometry from image sequences, eliminating the need for post-alignment with external sensors. Trained on a large mixture of driving datasets including nuScenes, OpenScene, Waymo, KITTI, and DDAD, DVGT significantly outperforms existing models on various scenarios. Code is available at https://github.com/wzzheng/DVGT.",
     "date": "2025-12-18",
-    "summary_cn": "本文针对自动驾驶中3D场景几何感知与重建的挑战，提出了驾驶视觉几何Transformer（DVGT）。该模型无需依赖精确的相机参数或显式3D几何先验，仅通过未标定的多视角图像序列，利用交替的视图内局部注意力、视图间空间注意力和帧间时间注意力机制，直接推理出度量尺度的全局密集3D点云地图和每帧的自车姿态。在大规模混合驾驶数据集上的实验表明，DVGT在各种场景下均显著优于现有模型。",
-    "one_sentence": "本文提出了一种无需精确相机参数、可灵活处理任意配置的驾驶视觉几何Transformer（DVGT），通过多视角注意力机制直接从图像序列感知并重建度量尺度的全局密集3D场景。"
+    "summary_cn": "感知和重建3D场景几何对于自动驾驶至关重要。为克服现有方法依赖精确相机参数、难以泛化的局限，本文提出DVGT模型。它利用DINO骨干网络提取视觉特征，并通过交替的视图内局部注意力、跨视图空间注意力和跨帧时序注意力推理图像间几何关系，最终解码出度量尺度的全局3D点云和自车位姿。该模型无需显式3D几何先验或与外部传感器对齐，在大规模混合驾驶数据集上训练后，在各种场景下均显著优于现有模型。",
+    "one_sentence": "本文提出了一种无需精确相机参数、可灵活适应不同场景和相机配置的驾驶视觉几何Transformer（DVGT），用于从无位姿多视角图像序列中重建全局稠密3D点云地图。"
   }
 ]
