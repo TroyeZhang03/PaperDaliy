@@ -4,8 +4,8 @@
     "url": "http://arxiv.org/abs/2512.21338v1",
     "abstract_en": "High-resolution video generation, while crucial for digital media and film, is computationally bottlenecked by the quadratic complexity of diffusion models, making practical inference infeasible. To address this, we introduce HiStream, an efficient autoregressive framework that systematically reduces redundancy across three axes: i) Spatial Compression: denoising at low resolution before refining at high resolution with cached features; ii) Temporal Compression: a chunk-by-chunk strategy with a fixed-size anchor cache, ensuring stable inference speed; and iii) Timestep Compression: applying fewer denoising steps to subsequent, cache-conditioned chunks. On 1080p benchmarks, our primary HiStream model (i+ii) achieves state-of-the-art visual quality while demonstrating up to 76.2x faster denoising compared to the Wan2.1 baseline and negligible quality loss. Our faster variant, HiStream+, applies all three optimizations (i+ii+iii), achieving a 107.5x acceleration over the baseline, offering a compelling trade-off between speed and quality, thereby making high-resolution video generation both practical and scalable.",
     "date": "2025-12-24",
-    "summary_cn": "高分辨率视频生成因扩散模型的二次复杂度而计算受限。本文提出了HiStream框架，通过空间压缩（低分辨率去噪并利用缓存特征）、时间压缩（分块策略与锚点缓存）和时间步压缩（缓存条件下的后续块减少去噪步数）来降低冗余。在1080p基准测试中，该方法在保持SOTA画质的同时，相比基线实现了最高107.5倍的加速，使高分辨率视频生成变得实用且可扩展。",
-    "one_sentence": "本文提出了一个名为HiStream的自回归框架，通过空间、时间和时间步三重压缩策略，系统性地减少了高分辨率视频生成中的冗余计算。"
+    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
+    "one_sentence": "生成失败"
   },
   {
     "title": "Beyond Memorization: A Multi-Modal Ordinal Regression Benchmark to Expose Popularity Bias in Vision-Language Models",
@@ -36,7 +36,7 @@
     "url": "http://arxiv.org/abs/2512.21334v1",
     "abstract_en": "We present Streamo, a real-time streaming video LLM that serves as a general-purpose interactive assistant. Unlike existing online video models that focus narrowly on question answering or captioning, Streamo performs a broad spectrum of streaming video tasks, including real-time narration, action understanding, event captioning, temporal event grounding, and time-sensitive question answering. To develop such versatility, we construct Streamo-Instruct-465K, a large-scale instruction-following dataset tailored for streaming video understanding. The dataset covers diverse temporal contexts and multi-task supervision, enabling unified training across heterogeneous streaming tasks. After training end-to-end on the instruction-following dataset through a streamlined pipeline, Streamo exhibits strong temporal reasoning, responsive interaction, and broad generalization across a variety of streaming benchmarks. Extensive experiments show that Streamo bridges the gap between offline video perception models and real-time multimodal assistants, making a step toward unified, intelligent video understanding in continuous video streams.",
     "date": "2025-12-24",
-    "summary_cn": "本文介绍了Streamo，一个实时流式视频大模型通用助手。与现有专注于特定任务的模型不同，Streamo能处理实时解说、事件定位和时序问答等多种流式任务。为此，作者构建了包含465K样本的Streamo-Instruct数据集。通过端到端训练，Streamo展现了强大的时序推理能力和交互响应性，弥合了离线视频感知与实时多模态助手间的差距。",
-    "one_sentence": "本文提出了Streamo，一个基于自建指令数据集训练的、能处理多种实时流式视频任务的统一视频大模型。"
+    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
+    "one_sentence": "生成失败"
   }
 ]
