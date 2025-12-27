@@ -4,16 +4,16 @@
     "url": "http://arxiv.org/abs/2512.21338v1",
     "abstract_en": "High-resolution video generation, while crucial for digital media and film, is computationally bottlenecked by the quadratic complexity of diffusion models, making practical inference infeasible. To address this, we introduce HiStream, an efficient autoregressive framework that systematically reduces redundancy across three axes: i) Spatial Compression: denoising at low resolution before refining at high resolution with cached features; ii) Temporal Compression: a chunk-by-chunk strategy with a fixed-size anchor cache, ensuring stable inference speed; and iii) Timestep Compression: applying fewer denoising steps to subsequent, cache-conditioned chunks. On 1080p benchmarks, our primary HiStream model (i+ii) achieves state-of-the-art visual quality while demonstrating up to 76.2x faster denoising compared to the Wan2.1 baseline and negligible quality loss. Our faster variant, HiStream+, applies all three optimizations (i+ii+iii), achieving a 107.5x acceleration over the baseline, offering a compelling trade-off between speed and quality, thereby making high-resolution video generation both practical and scalable.",
     "date": "2025-12-24",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "本文针对高分辨率视频生成计算瓶颈问题，提出名为HiStream的高效自回归框架。该框架通过空间压缩（低分辨率去噪并利用缓存特征）、时间压缩（分块处理结合锚点缓存）和时间步压缩（减少后续块的去噪步数）系统性地减少冗余。在1080p基准测试中，该方法在保持视觉质量的同时，相比基线实现了最高107.5倍的加速，使高分辨率视频生成更加实用和可扩展。",
+    "one_sentence": "本文提出HiStream框架，通过空间、时间和时间步三重压缩策略，显著加速高分辨率视频生成。"
   },
   {
     "title": "Beyond Memorization: A Multi-Modal Ordinal Regression Benchmark to Expose Popularity Bias in Vision-Language Models",
     "url": "http://arxiv.org/abs/2512.21337v1",
     "abstract_en": "We expose a significant popularity bias in state-of-the-art vision-language models (VLMs), which achieve up to 34% higher accuracy on famous buildings compared to ordinary ones, indicating a reliance on memorization over generalizable understanding. To systematically investigate this, we introduce the largest open benchmark for this task: the YearGuessr dataset, a collection of 55,546 building images with multi-modal attributes from 157 countries, annotated with continuous ordinal labels of their construction year (1001-2024), GPS data, and page-view counts as a proxy for popularity. Using this dataset, we frame the construction year prediction task as ordinal regression and introduce popularity-aware interval accuracy metrics to quantify this bias. Our resulting benchmark of 30+ models, including our YearCLIP model, confirms that VLMs excel on popular, memorized items but struggle significantly with unrecognized subjects, exposing a critical flaw in their reasoning capabilities. Project page: https://sytwu.github.io/BeyondMemo/",
     "date": "2025-12-24",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "这篇论文揭示了当前最先进的视觉语言模型（VLMs）存在显著的流行度偏见，即在处理著名建筑时准确率远高于普通建筑，表明其依赖记忆而非通用理解。为此，作者引入了YearGuessr数据集，包含超过5.5万张带有建造年份、GPS和流行度数据的建筑图像，并将年份预测定义为序数回归任务。通过引入流行度感知指标对30多个模型进行评估，研究证实VLMs在处理受认可的流行事物时表现出色，但在面对未被识别的主体时则表现挣扎，暴露了其推理能力的关键缺陷。",
+    "one_sentence": "本文通过构建YearGuessr数据集并提出新指标，揭示了主流视觉语言模型存在严重的流行度偏见，其性能依赖于对著名建筑的记忆而非真正的泛化推理能力。"
   },
   {
     "title": "Optimizing Decoding Paths in Masked Diffusion Models by Quantifying Uncertainty",
