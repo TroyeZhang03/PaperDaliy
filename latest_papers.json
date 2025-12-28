@@ -4,16 +4,16 @@
     "url": "http://arxiv.org/abs/2512.21338v1",
     "abstract_en": "High-resolution video generation, while crucial for digital media and film, is computationally bottlenecked by the quadratic complexity of diffusion models, making practical inference infeasible. To address this, we introduce HiStream, an efficient autoregressive framework that systematically reduces redundancy across three axes: i) Spatial Compression: denoising at low resolution before refining at high resolution with cached features; ii) Temporal Compression: a chunk-by-chunk strategy with a fixed-size anchor cache, ensuring stable inference speed; and iii) Timestep Compression: applying fewer denoising steps to subsequent, cache-conditioned chunks. On 1080p benchmarks, our primary HiStream model (i+ii) achieves state-of-the-art visual quality while demonstrating up to 76.2x faster denoising compared to the Wan2.1 baseline and negligible quality loss. Our faster variant, HiStream+, applies all three optimizations (i+ii+iii), achieving a 107.5x acceleration over the baseline, offering a compelling trade-off between speed and quality, thereby making high-resolution video generation both practical and scalable.",
     "date": "2025-12-24",
-    "summary_cn": "本文针对高分辨率视频生成计算瓶颈问题，提出名为HiStream的高效自回归框架。该框架通过空间压缩（低分辨率去噪并利用缓存特征）、时间压缩（分块处理结合锚点缓存）和时间步压缩（减少后续块的去噪步数）系统性地减少冗余。在1080p基准测试中，该方法在保持视觉质量的同时，相比基线实现了最高107.5倍的加速，使高分辨率视频生成更加实用和可扩展。",
-    "one_sentence": "本文提出HiStream框架，通过空间、时间和时间步三重压缩策略，显著加速高分辨率视频生成。"
+    "summary_cn": "本文针对高分辨率视频生成计算量大的问题，提出高效自回归框架HiStream。该框架通过三重压缩策略降低冗余：在低分辨率去噪后利用缓存特征精修（空间压缩）、分块处理并缓存锚点（时间压缩）、对缓存条件的块减少去噪步数（时间步压缩）。在1080p基准测试中，HiStream在保持顶尖画质的同时，相比基线加速最高达76.2倍，其变体HiStream+更实现了107.5倍加速，实现了速度与质量的有效平衡，使高分辨率视频生成更具实用性和扩展性。",
+    "one_sentence": "本文提出HiStream框架，通过空间、时间和时间步三重压缩策略，大幅加速高分辨率视频生成。"
   },
   {
     "title": "Beyond Memorization: A Multi-Modal Ordinal Regression Benchmark to Expose Popularity Bias in Vision-Language Models",
     "url": "http://arxiv.org/abs/2512.21337v1",
     "abstract_en": "We expose a significant popularity bias in state-of-the-art vision-language models (VLMs), which achieve up to 34% higher accuracy on famous buildings compared to ordinary ones, indicating a reliance on memorization over generalizable understanding. To systematically investigate this, we introduce the largest open benchmark for this task: the YearGuessr dataset, a collection of 55,546 building images with multi-modal attributes from 157 countries, annotated with continuous ordinal labels of their construction year (1001-2024), GPS data, and page-view counts as a proxy for popularity. Using this dataset, we frame the construction year prediction task as ordinal regression and introduce popularity-aware interval accuracy metrics to quantify this bias. Our resulting benchmark of 30+ models, including our YearCLIP model, confirms that VLMs excel on popular, memorized items but struggle significantly with unrecognized subjects, exposing a critical flaw in their reasoning capabilities. Project page: https://sytwu.github.io/BeyondMemo/",
     "date": "2025-12-24",
-    "summary_cn": "这篇论文揭示了当前最先进的视觉语言模型（VLMs）存在显著的流行度偏见，即在处理著名建筑时准确率远高于普通建筑，表明其依赖记忆而非通用理解。为此，作者引入了YearGuessr数据集，包含超过5.5万张带有建造年份、GPS和流行度数据的建筑图像，并将年份预测定义为序数回归任务。通过引入流行度感知指标对30多个模型进行评估，研究证实VLMs在处理受认可的流行事物时表现出色，但在面对未被识别的主体时则表现挣扎，暴露了其推理能力的关键缺陷。",
-    "one_sentence": "本文通过构建YearGuessr数据集并提出新指标，揭示了主流视觉语言模型存在严重的流行度偏见，其性能依赖于对著名建筑的记忆而非真正的泛化推理能力。"
+    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
+    "one_sentence": "生成失败"
   },
   {
     "title": "Optimizing Decoding Paths in Masked Diffusion Models by Quantifying Uncertainty",
@@ -36,7 +36,7 @@
     "url": "http://arxiv.org/abs/2512.21334v1",
     "abstract_en": "We present Streamo, a real-time streaming video LLM that serves as a general-purpose interactive assistant. Unlike existing online video models that focus narrowly on question answering or captioning, Streamo performs a broad spectrum of streaming video tasks, including real-time narration, action understanding, event captioning, temporal event grounding, and time-sensitive question answering. To develop such versatility, we construct Streamo-Instruct-465K, a large-scale instruction-following dataset tailored for streaming video understanding. The dataset covers diverse temporal contexts and multi-task supervision, enabling unified training across heterogeneous streaming tasks. After training end-to-end on the instruction-following dataset through a streamlined pipeline, Streamo exhibits strong temporal reasoning, responsive interaction, and broad generalization across a variety of streaming benchmarks. Extensive experiments show that Streamo bridges the gap between offline video perception models and real-time multimodal assistants, making a step toward unified, intelligent video understanding in continuous video streams.",
     "date": "2025-12-24",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "本文介绍了Streamo，一个实时流式视频大模型，旨在作为通用交互助手。不同于现有专注于问答或字幕的模型，Streamo能执行实时叙述、动作理解、事件定位等多种流式任务。为实现此功能，作者构建了包含46.5万条指令的Streamo-Instruct数据集。经端到端训练后，Streamo在时序推理和交互响应上表现出色，弥合了离线视频感知与实时多模态助手间的差距。",
+    "one_sentence": "本文提出了Streamo，一个能处理多种实时流式视频任务的端到端视频大模型，并为此构建了专门的指令微调数据集。"
   }
 ]
