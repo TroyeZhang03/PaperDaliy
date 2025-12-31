@@ -12,8 +12,8 @@
     "url": "http://arxiv.org/abs/2512.23708v1",
     "abstract_en": "We identify quantum geometric bounds for observables in non-Hermitian systems. We find unique bounds on non-Hermitian quantum geometric tensors, generalized two-point response correlators, conductivity tensors, and optical weights. We showcase these findings in topological systems with non-Hermitian Chern numbers. We demonstrate that the non-Hermitian geometric constraints on response functions naturally arise in open quantum systems governed by out-of-equilibrium Lindbladian dynamics. Our findings are relevant to experimental observables and responses under the realistic setups that fall beyond the idealized closed-system descriptions.",
     "date": "2025-12-29",
-    "summary_cn": "本文在非厄米量子力学框架下，识别了可观测量的量子几何下界，发现其对量子几何张量、两点响应函数、电导率张量及光权重等物理量均构成限制。研究以具有非厄米陈数的拓扑系统为例进行了展示，并指出这些几何约束自然地产生于由Lindblad主方程描述的非平衡开放量子系统动力学中。这些发现对于理解真实实验条件下（非理想封闭系统）的响应函数与可观测结果具有重要意义。",
-    "one_sentence": "本文在非厄米系统中为可观测量推导出普适的量子几何下界，并阐明其在非平衡开放量子系统中的物理起源。"
+    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
+    "one_sentence": "生成失败"
   },
   {
     "title": "Training AI Co-Scientists Using Rubric Rewards",
