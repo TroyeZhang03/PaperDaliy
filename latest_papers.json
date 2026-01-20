@@ -4,39 +4,39 @@
     "url": "http://arxiv.org/abs/2601.11522v1",
     "abstract_en": "Despite recent progress, medical foundation models still struggle to unify visual understanding and generation, as these tasks have inherently conflicting goals: semantic abstraction versus pixel-level reconstruction. Existing approaches, typically based on parameter-shared autoregressive architectures, frequently lead to compromised performance in one or both tasks. To address this, we present UniX, a next-generation unified medical foundation model for chest X-ray understanding and generation. UniX decouples the two tasks into an autoregressive branch for understanding and a diffusion branch for high-fidelity generation. Crucially, a cross-modal self-attention mechanism is introduced to dynamically guide the generation process with understanding features. Coupled with a rigorous data cleaning pipeline and a multi-stage training strategy, this architecture enables synergistic collaboration between tasks while leveraging the strengths of diffusion models for superior generation. On two representative benchmarks, UniX achieves a 46.1% improvement in understanding performance (Micro-F1) and a 24.2% gain in generation quality (FD-RadDino), using only a quarter of the parameters of LLM-CXR. By achieving performance on par with task-specific models, our work establishes a scalable paradigm for synergistic medical image understanding and generation. Codes and models are available at https://github.com/ZrH42/UniX.",
     "date": "2026-01-16",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "针对医疗基础模型中视觉理解与生成任务目标冲突的问题，本文提出了UniX模型。该模型采用解耦架构，分别使用自回归分支进行理解、扩散分支进行高保真生成，并通过跨模态自注意力机制实现任务间的动态协同。配合数据清洗和多阶段训练策略，UniX在参数仅为现有模型四分之一的情况下，在理解和生成任务上均取得了显著的性能提升，为协同医学图像理解与生成提供了可扩展的范式。",
+    "one_sentence": "本文提出了一种名为UniX的医疗基础模型，通过将理解任务与生成任务解耦至不同分支并引入跨模态注意力机制，实现了胸部X光图像理解与生成的协同统一。"
   },
   {
     "title": "X-ray Polarization of the Intrabinary Shock in Redback Pulsar J1723$-$2837",
     "url": "http://arxiv.org/abs/2601.11521v1",
     "abstract_en": "The intrabinary shocks (IBS) in spider pulsars emit non-thermal synchrotron X-rays from accelerated electrons and positrons in the shocked pulsar wind, likely energized by magnetic reconnection. The double-peaked X-ray light curves from these shocks have been well characterized in several spider systems. In this paper, we analyze Imaging X-ray Polarimetry Explorer (IXPE) observations of the redback pulsar J1723$-$2837 to examine the expected synchrotron polarization. Using advanced extraction methods that include spatial, temporal, and particle background weights, we constrain the polarization of the IBS. We compare different models for the magnetic field in the radiation zone and find that the best fit prefers a striped pulsar wind model over other polarized models, with maximum polarization degree of the IBS emission component $Π_{\\rm IBS}=36^{+16}_{-15}\\%$, in addition to an unpolarized non-IBS component. Since this is only 2.4$σ$, we cannot claim strong preference over an unpolarized model; we report a $99\\%$ confidence level upper limit on the total polarization of both IBS and non-IBS components $Π_{99}<36\\%$, which is improved over the $50\\%$ limit obtained in previous work. The best-fit polarization of the IBS component is consistent with numerical simulations. Detailed tests of such models are accessible to future measurements.",
     "date": "2026-01-16",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "蜘蛛脉冲星的双峰X射线光变曲线源于其内双激波的非热同步辐射。本研究利用成像X射线偏振探测器的观测数据，结合先进的背景处理方法，分析了红背脉冲星J1723-2837内双激波的偏振特性。结果发现，其偏振数据更倾向于条纹状脉冲星风模型，测得内双激波成分的最大偏振度为36%（置信度2.4σ），并将总偏振度的99%置信水平上限从以往的50%改进至36%。这一结果与数值模拟预测一致，为未来更精确的模型检验奠定了基础。",
+    "one_sentence": "本文首次利用IXPE观测数据，分析蜘蛛脉冲星J1723-2837内双激波的同步辐射偏振，发现其偏振特性倾向于条纹状脉冲星风模型，并将总偏振度的置信上限提高至36%。"
   },
   {
     "title": "Empirical Coordination over Markov Channel with Independent Source",
     "url": "http://arxiv.org/abs/2601.11520v1",
     "abstract_en": "We study joint source-channel coding over Markov channels through the empirical coordination framework. More specifically, we aim at determining the empirical distributions of source and channel symbols that can be induced by a coding scheme. We consider strictly causal encoders that generate channel inputs, without access to the past channel states, henceforth driving the current Markov state evolution. Our main result is the single-letter inner and outer bounds of the set of achievable joint distributions, coordinating all the symbols in the network. To establish the inner bound, we introduce a new notion of typicality, the input-driven Markov typicality, and develop its fundamental properties. Contrary to the classical block-Markov coding schemes that rely on blockwise independence for discrete memoryless channels, our analysis directly exploits the Markov channel structure and improves beyond the independence-based arguments.",
     "date": "2026-01-16",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "AI 总结生成失败",
+    "one_sentence": "本文针对马尔可夫信道，通过引入输入驱动马尔可夫典型性概念，建立了联合信源信道编码可实现分布的紧致内外界，改进了传统基于独立性的分析方法。"
   },
   {
     "title": "How Long Is a Piece of String? A Brief Empirical Analysis of Tokenizers",
     "url": "http://arxiv.org/abs/2601.11518v1",
     "abstract_en": "Frontier LLMs are increasingly utilised across academia, society and industry. A commonly used unit for comparing models, their inputs and outputs, and estimating inference pricing is the token. In general, tokens are used as a stable currency, assumed to be broadly consistent across tokenizers and contexts, enabling direct comparisons. However, tokenization varies significantly across models and domains of text, making naive interpretation of token counts problematic. We quantify this variation by providing a comprehensive empirical analysis of tokenization, exploring the compression of sequences to tokens across different distributions of textual data. Our analysis challenges commonly held heuristics about token lengths, finding them to be overly simplistic. We hope the insights of our study add clarity and intuition toward tokenization in contemporary LLMs.",
     "date": "2026-01-16",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "本文针对大语言模型中普遍用于比较和计价的“令牌”单位进行了深入的实证分析。研究发现，不同模型和文本领域的令牌化过程存在显著差异，导致单纯依据令牌数量进行比较存在问题。该研究挑战了关于令牌长度的常见简化假设，旨在为理解当代LLM的令牌化提供更清晰的见解。",
+    "one_sentence": "本文通过量化分析揭示了不同模型和文本领域中令牌化过程的显著差异，挑战了关于令牌长度的常见启发式假设。"
   },
   {
     "title": "Do explanations generalize across large reasoning models?",
     "url": "http://arxiv.org/abs/2601.11517v1",
     "abstract_en": "Large reasoning models (LRMs) produce a textual chain of thought (CoT) in the process of solving a problem, which serves as a potentially powerful tool to understand the problem by surfacing a human-readable, natural-language explanation. However, it is unclear whether these explanations generalize, i.e. whether they capture general patterns about the underlying problem rather than patterns which are esoteric to the LRM. This is a crucial question in understanding or discovering new concepts, e.g. in AI for science. We study this generalization question by evaluating a specific notion of generalizability: whether explanations produced by one LRM induce the same behavior when given to other LRMs. We find that CoT explanations often exhibit this form of generalization (i.e. they increase consistency between LRMs) and that this increased generalization is correlated with human preference rankings and post-training with reinforcement learning. We further analyze the conditions under which explanations yield consistent answers and propose a straightforward, sentence-level ensembling strategy that improves consistency. Taken together, these results prescribe caution when using LRM explanations to yield new insights and outline a framework for characterizing LRM explanation generalization.",
     "date": "2026-01-16",
-    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
-    "one_sentence": "生成失败"
+    "summary_cn": "该研究探讨了大推理模型（LRM）在解决问题时产生的思维链（CoT）解释是否具有泛化性，即能否捕捉问题的通用模式而非模型本身的特性。研究者通过评估一个LRM生成的解释能否诱导其他LRM产生相同行为来检验泛化性，发现CoT解释常能提高模型间的一致性，且这种泛化性与人类偏好排名和强化学习微调相关。研究还分析了解释产生一致答案的条件，并提出了一种简单的句子级集成策略以进一步提升一致性。这些发现警示了使用LRM解释获取新见解的风险，并构建了一个评估解释泛化性的框架。",
+    "one_sentence": "本文提出通过评估大推理模型生成的思维链解释在不同模型间的可迁移性来研究其泛化性，并发现这种泛化性与人类偏好及强化学习微调相关。"
   }
 ]
