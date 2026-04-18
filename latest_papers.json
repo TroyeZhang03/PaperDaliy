@@ -4,39 +4,39 @@
     "url": "http://arxiv.org/abs/2604.15313v1",
     "abstract_en": "We develop a framework to describe gravitational wave propagation through a stochastic distribution of weak gravitational lenses beyond the geometric optics limit. We model the lens distribution as a static random background field and formulate the problem in the language of quenched disorder, treating the disorder averaged density matrix as the fundamental object from which observables are computed. Using the Schwinger Keldysh formalism, we construct a path-integral representation of the averaged density matrix and derive its explicit form perturbatively for a suitable class of couplings. The result naturally separates into a quadratic exponential term, which governs the suppression of phase sensitive contributions in the averaged description, and a purely oscillatory contribution, which modifies coherent propagation through a disorder-induced correction to the propagation kernel. This provides a unified description of interference, diffraction, and statistical fluctuations of the lens distribution within a single framework. We also identify the physical scales controlling the onset of coherence loss and illustrate the formalism in the case of Gaussian wave packets. More generally, the derivation applies to any system described by the same class of actions, making the framework relevant beyond gravitational wave lensing to wave propagation in disordered media.",
     "date": "2026-04-16",
-    "summary_cn": "本文建立了一个新框架，利用淬火无序理论和 Schwinger-Keldysh 路径积分，描述超越几何光学极限的引力波在随机弱透镜中的传播。该框架统一了干涉、衍射及统计涨落效应，明确了相干性丧失的物理尺度，并适用于更广泛的无序介质波传播问题。",
-    "one_sentence": "本文提出了一种基于淬火无序和 Schwinger-Keldysh 形式体系的框架，用于在几何光学极限之外描述引力波在随机弱透镜分布中的传播。"
+    "summary_cn": "本文构建了新框架，利用淬灭无序理论和 Schwinger-Keldysh 形式，推导了随机弱引力透镜下引力波传播的平均密度矩阵。该模型统一描述了干涉、衍射及统计涨落，揭示了相干性丧失的物理尺度，并适用于更广泛的无序介质波传播问题。",
+    "one_sentence": "本文提出了一种基于淬灭无序和 Schwinger-Keldysh 形式的路径积分框架，用于在几何光学极限之外统一描述随机弱引力透镜分布下的引力波传播、干涉与衍射效应。"
   },
   {
     "title": "Bidirectional Cross-Modal Prompting for Event-Frame Asymmetric Stereo",
     "url": "http://arxiv.org/abs/2604.15312v1",
     "abstract_en": "Conventional frame-based cameras capture rich contextual information but suffer from limited temporal resolution and motion blur in dynamic scenes. Event cameras offer an alternative visual representation with higher dynamic range free from such limitations. The complementary characteristics of the two modalities make event-frame asymmetric stereo promising for reliable 3D perception under fast motion and challenging illumination. However, the modality gap often leads to marginalization of domain-specific cues essential for cross-modal stereo matching. In this paper, we introduce Bi-CMPStereo, a novel bidirectional cross-modal prompting framework that fully exploits semantic and structural features from both domains for robust matching. Our approach learns finely aligned stereo representations within a target canonical space and integrates complementary representations by projecting each modality into both event and frame domains. Extensive experiments demonstrate that our approach significantly outperforms state-of-the-art methods in accuracy and generalization.",
     "date": "2026-04-16",
-    "summary_cn": "针对事件 - 帧异构立体匹配中的模态差距问题，本文提出 Bi-CMPStereo 框架。该方法通过双向跨模态提示机制，将各模态特征投影至对方域，在目标规范空间学习对齐表示，有效融合互补信息。实验表明，该方法在精度和泛化性上显著优于现有技术。",
-    "one_sentence": "本文提出了一种名为 Bi-CMPStereo 的双向跨模态提示框架，通过将事件和帧模态相互投影到对方域中，充分挖掘双向语义与结构特征以实现鲁棒的立体匹配。"
+    "summary_cn": "针对事件 - 帧异构立体匹配中模态差异导致特征丢失的问题，本文提出 Bi-CMPStereo 框架。该方法利用双向跨模态提示机制，充分挖掘两域语义与结构特征，在规范空间实现精细对齐，显著提升了动态场景下的三维感知精度与泛化能力。",
+    "one_sentence": "本文提出了一种名为 Bi-CMPStereo 的双向跨模态提示框架，通过将事件相机与帧相机特征相互投影至对方域并在规范空间对齐，解决了异构立体匹配中的模态差距问题。"
   },
   {
     "title": "LeapAlign: Post-Training Flow Matching Models at Any Generation Step by Building Two-Step Trajectories",
     "url": "http://arxiv.org/abs/2604.15311v1",
     "abstract_en": "This paper focuses on the alignment of flow matching models with human preferences. A promising way is fine-tuning by directly backpropagating reward gradients through the differentiable generation process of flow matching. However, backpropagating through long trajectories results in prohibitive memory costs and gradient explosion. Therefore, direct-gradient methods struggle to update early generation steps, which are crucial for determining the global structure of the final image. To address this issue, we introduce LeapAlign, a fine-tuning method that reduces computational cost and enables direct gradient propagation from reward to early generation steps. Specifically, we shorten the long trajectory into only two steps by designing two consecutive leaps, each skipping multiple ODE sampling steps and predicting future latents in a single step. By randomizing the start and end timesteps of the leaps, LeapAlign leads to efficient and stable model updates at any generation step. To better use such shortened trajectories, we assign higher training weights to those that are more consistent with the long generation path. To further enhance gradient stability, we reduce the weights of gradient terms with large magnitude, instead of completely removing them as done in previous works. When fine-tuning the Flux model, LeapAlign consistently outperforms state-of-the-art GRPO-based and direct-gradient methods across various metrics, achieving superior image quality and image-text alignment.",
     "date": "2026-04-16",
-    "summary_cn": "本文针对流匹配模型偏好对齐中长轨迹反向传播导致的显存爆炸和梯度不稳定问题，提出 LeapAlign 方法。该方法通过两步跳跃机制缩短轨迹，实现早期步骤的直接梯度更新，并结合加权策略提升训练稳定性与图像质量，性能优于现有最先进方法。",
-    "one_sentence": "本文提出了 LeapAlign 方法，通过设计两步跳跃机制缩短生成轨迹，实现了从奖励到早期生成步骤的高效直接梯度传播，解决了长轨迹反向传播中的显存爆炸和梯度不稳定问题。"
+    "summary_cn": "本文针对流匹配模型偏好对齐中长轨迹反向传播导致的显存受限和梯度爆炸问题，提出 LeapAlign 方法。该方法通过两步跳跃机制缩短轨迹，实现早期步骤的直接梯度更新，并结合加权策略提升训练稳定性与效率，在图像质量和图文对齐上优于现有方法。",
+    "one_sentence": "本文提出了一种名为 LeapAlign 的微调方法，通过设计两步跳跃机制缩短生成轨迹，实现了从奖励到早期生成步骤的高效直接梯度传播，解决了长轨迹反向传播中的内存溢出和梯度爆炸问题。"
   },
   {
     "title": "TokenLight: Precise Lighting Control in Images using Attribute Tokens",
     "url": "http://arxiv.org/abs/2604.15310v1",
     "abstract_en": "This paper presents a method for image relighting that enables precise and continuous control over multiple illumination attributes in a photograph. We formulate relighting as a conditional image generation task and introduce attribute tokens to encode distinct lighting factors such as intensity, color, ambient illumination, diffuse level, and 3D light positions. The model is trained on a large-scale synthetic dataset with ground-truth lighting annotations, supplemented by a small set of real captures to enhance realism and generalization. We validate our approach across a variety of relighting tasks, including controlling in-scene lighting fixtures and editing environment illumination using virtual light sources, on synthetic and real images. Our method achieves state-of-the-art quantitative and qualitative performance compared to prior work. Remarkably, without explicit inverse rendering supervision, the model exhibits an inherent understanding of how light interacts with scene geometry, occlusion, and materials, yielding convincing lighting effects even in traditionally challenging scenarios such as placing lights within objects or relighting transparent materials plausibly. Project page: vrroom.github.io/tokenlight/",
     "date": "2026-04-16",
-    "summary_cn": "本文提出一种图像重照明方法，将任务构建为条件生成问题并引入属性令牌编码多重光照因素。模型利用大规模合成数据与少量真实数据训练，无需显式逆渲染监督即可理解几何与材质交互，在复杂场景中实现 state-of-the-art 的重照明效果。",
-    "one_sentence": "本文提出了一种基于属性令牌的条件图像生成方法，实现了对照片强度、颜色、环境光及 3D 光源位置等多重照明属性的精确连续控制。"
+    "summary_cn": "本文提出一种图像重光照新方法，将任务建模为条件生成，引入属性令牌编码强度、颜色及 3D 位置等光照因素。模型利用大规模合成数据与少量真实数据训练，无需显式逆渲染监督即可理解光与几何交互，在多种场景下达到最先进水平。",
+    "one_sentence": "本文提出了一种基于属性令牌的条件图像生成方法，通过编码多种光照因子实现了对图像重光照的精确连续控制。"
   },
   {
     "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
     "url": "http://arxiv.org/abs/2604.15309v1",
     "abstract_en": "The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly adopted paradigm for modern UI/UX. However, directly integrating such tools into automated webpage generation often leads to style inconsistency and poor global coherence, as elements are generated in isolation. We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection. MM-WebAgent jointly optimizes global layout, local multimodal content, and their integration, producing coherent and visually consistent webpages. We further introduce a benchmark for multimodal webpage generation and a multi-level evaluation protocol for systematic assessment. Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration. Code & Data: https://aka.ms/mm-webagent.",
     "date": "2026-04-16",
-    "summary_cn": "针对 AIGC 工具直接集成导致网页风格不一致的问题，本文提出 MM-WebAgent 框架。该方法利用分层规划与迭代自反思机制，协同优化全局布局与局部多模态内容。实验表明，其在多模态元素生成及整合方面优于现有基线，并提供了新基准与评估协议。",
-    "one_sentence": "本文提出了 MM-WebAgent，一种通过分层规划和迭代自反思协调 AIGC 工具的多模态网页生成分层代理框架，以解决元素孤立生成导致的风格不一致和全局连贯性差的问题。"
+    "summary_cn": "针对 AIGC 工具直接集成导致的网页风格不一致问题，本文提出 MM-WebAgent 框架。该方法利用分层规划与迭代自反思，协同优化全局布局与多模态内容，显著提升生成网页的视觉连贯性，并建立了相应的基准与评估协议。",
+    "one_sentence": "本文提出了 MM-WebAgent，一种通过分层规划和迭代自反思协调 AIGC 元素生成的分层代理框架，以解决网页生成中的风格不一致和全局连贯性问题。"
   }
 ]
