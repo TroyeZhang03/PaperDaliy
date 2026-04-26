@@ -4,39 +4,39 @@
     "url": "http://arxiv.org/abs/2604.21931v1",
     "abstract_en": "How can we tell whether a video has been sped up or slowed down? How can we generate videos at different speeds? Although videos have been central to modern computer vision research, little attention has been paid to perceiving and controlling the passage of time. In this paper, we study time as a learnable visual concept and develop models for reasoning about and manipulating the flow of time in videos. We first exploit the multimodal cues and temporal structure naturally present in videos to learn, in a self-supervised manner, to detect speed changes and estimate playback speed. We then show that these learned temporal reasoning models enable us to curate the largest slow-motion video dataset to date from noisy in-the-wild sources. Such slow-motion footage, typically filmed by high-speed cameras, contains substantially richer temporal detail than standard videos. Using this data, we further develop models capable of temporal control, including speed-conditioned video generation, which produces motion at specified playback speed, and temporal super-resolution, which tranforms low-FPS, blurry videos into high-FPS sequences with fine-grained temporal details. Our findings highlight time as a manipulable, perceptual dimension in video learning, opening doors to temporally controllable video generation, temporal forensics detection, and potentially richer world-models that understand how events unfold over time.",
     "date": "2026-04-23",
-    "summary_cn": "本文研究将时间作为可学习概念，利用自监督学习检测视频速度变化，并构建了迄今最大的慢动作数据集。基于此，作者开发了速度条件视频生成和时间超分辨率模型，实现了对视频时间流的精确控制与细节增强，为视频生成和取证开辟了新方向。",
-    "one_sentence": "本文提出将时间作为可学习的视觉概念，通过自监督学习感知视频速度，并利用构建的大规模慢动作数据集实现了速度可控的视频生成与时间超分辨率。"
+    "summary_cn": "本文研究将时间作为可学习视觉概念，利用自监督学习检测视频速度变化，并构建了大规模慢动作数据集。基于此，作者开发了速度条件视频生成和时间超分辨率模型，实现了对视频时间流逝的精确控制与细节增强，推动了视频生成与取证技术的发展。",
+    "one_sentence": "本文提出将时间视为可学习的视觉概念，通过自监督学习感知视频速度，并利用构建的大规模慢动作数据集实现了速度可控的视频生成与时间超分辨率。"
   },
   {
     "title": "Temporal Taskification in Streaming Continual Learning: A Source of Evaluation Instability",
     "url": "http://arxiv.org/abs/2604.21930v1",
     "abstract_en": "Streaming Continual Learning (CL) typically converts a continuous stream into a sequence of discrete tasks through temporal partitioning. We argue that this temporal taskification step is not a neutral preprocessing choice, but a structural component of evaluation: different valid splits of the same stream can induce different CL regimes and therefore different benchmark conclusions. To study this effect, we introduce a taskification-level framework based on plasticity and stability profiles, a profile distance between taskifications, and Boundary-Profile Sensitivity (BPS), which diagnoses how strongly small boundary perturbations alter the induced regime before any CL model is trained. We evaluate continual finetuning, Experience Replay, Elastic Weight Consolidation, and Learning without Forgetting on network traffic forecasting with CESNET-Timeseries24, keeping the stream, model, and training budget fixed while varying only the temporal taskification. Across 9-, 30-, and 44-day splits, we observe substantial changes in forecasting error, forgetting, and backward transfer, showing that taskification alone can materially affect CL evaluation. We further find that shorter taskifications induce noisier distribution-level patterns, larger structural distances, and higher BPS, indicating greater sensitivity to boundary perturbations. These results show that benchmark conclusions in streaming CL depend not only on the learner and the data stream, but also on how that stream is taskified, motivating temporal taskification as a first-class evaluation variable.",
     "date": "2026-04-23",
-    "summary_cn": "本文指出流式持续学习中将数据流划分为离散任务的时间划分并非中性预处理，而是关键评估变量。作者提出基于可塑性与稳定性剖面的新框架及边界剖面敏感度指标，证明不同划分会导致截然不同的基准测试结论，主张将其视为核心评估维度。",
-    "one_sentence": "本文提出了一种任务化级别的分析框架，揭示了时间划分方式本身作为结构性变量会显著影响流式持续学习的评估结论。"
+    "summary_cn": "本文指出流式持续学习中时间任务划分非中性预处理，而是影响评估结论的结构组件。作者提出基于可塑性与稳定性剖面的新框架及边界剖面敏感度指标，证实不同划分策略显著改变模型表现，主张将任务化视为核心评估变量。",
+    "one_sentence": "本文提出了一种任务化层级评估框架，揭示了时间任务划分方式本身是流式持续学习评估的关键变量，而非中性预处理步骤。"
   },
   {
     "title": "Evaluation of Automatic Speech Recognition Using Generative Large Language Models",
     "url": "http://arxiv.org/abs/2604.21928v1",
     "abstract_en": "Automatic Speech Recognition (ASR) is traditionally evaluated using Word Error Rate (WER), a metric that is insensitive to meaning. Embedding-based semantic metrics are better correlated with human perception, but decoder-based Large Language Models (LLMs) remain underexplored for this task. This paper evaluates their relevance through three approaches: (1) selecting the best hypothesis between two candidates, (2) computing semantic distance using generative embeddings, and (3) qualitative classification of errors. On the HATS dataset, the best LLMs achieve 92--94\\% agreement with human annotators for hypothesis selection, compared to 63\\% for WER, also outperforming semantic metrics. Embeddings from decoder-based LLMs show performance comparable to encoder models. Finally, LLMs offer a promising direction for interpretable and semantic ASR evaluation.",
     "date": "2026-04-23",
-    "summary_cn": "针对传统词错误率忽略语义的问题，本文评估了解码器大语言模型在语音识别评估中的应用。实验表明，该模型在假设选择任务上与人类标注的一致性高达 92%-94%，远超传统方法，且其生成的嵌入向量表现媲美编码器模型，为可解释的语义评估提供了新方向。",
-    "one_sentence": "本文首次系统评估了基于解码器的大语言模型在自动语音识别语义评估中的有效性，证明其在假设选择任务上显著优于传统词错误率和现有语义指标。"
+    "summary_cn": "针对传统词错误率忽略语义的问题，本文评估了解码器大语言模型在语音识别评估中的应用。实验表明，该模型在假设选择任务上与人类标注的一致性高达 92%-94%，远超传统指标，且其生成的嵌入向量表现媲美编码器模型，为可解释的语义评估提供了新方向。",
+    "one_sentence": "本文首次系统评估了基于解码器的大语言模型在自动语音识别语义评估中的有效性，证明其在假设选择任务上显著优于传统词错误率及现有语义指标。"
   },
   {
     "title": "Fine-Tuning Regimes Define Distinct Continual Learning Problems",
     "url": "http://arxiv.org/abs/2604.21927v1",
     "abstract_en": "Continual learning (CL) studies how models acquire tasks sequentially while retaining previously learned knowledge. Despite substantial progress in benchmarking CL methods, comparative evaluations typically keep the fine-tuning regime fixed. In this paper, we argue that the fine-tuning regime, defined by the trainable parameter subspace, is itself a key evaluation variable. We formalize adaptation regimes as projected optimization over fixed trainable subspaces, showing that changing the trainable depth alters the effective update signal through which both current task fitting and knowledge preservation operate. This analysis motivates the hypothesis that method comparisons need not be invariant across regimes. We test this hypothesis in task incremental CL, five trainable depth regimes, and four standard methods: online EWC, LwF, SI, and GEM. Across five benchmark datasets, namely MNIST, Fashion MNIST, KMNIST, QMNIST, and CIFAR-100, and across 11 task orders per dataset, we find that the relative ranking of methods is not consistently preserved across regimes. We further show that deeper adaptation regimes are associated with larger update magnitudes, higher forgetting, and a stronger relationship between the two. These results show that comparative conclusions in CL can depend strongly on the chosen fine-tuning regime, motivating regime-aware evaluation protocols that treat trainable depth as an explicit experimental factor.",
     "date": "2026-04-23",
-    "summary_cn": "本文指出持续学习评估中常忽略微调机制的影响，论证可训练深度是关键变量。实验表明，改变微调深度会显著影响更新幅度与遗忘程度，导致不同方法的相对排名发生变化，呼吁建立感知微调机制的评估协议。",
-    "one_sentence": "本文提出将微调机制（即可训练参数子空间深度）作为持续学习评估中的关键变量，揭示了不同微调机制下方法相对排名的不稳定性。"
+    "summary_cn": "本文指出持续学习评估中常被忽视的微调机制是关键变量。通过形式化分析不同可训练深度对更新信号的影响，并在多个数据集上验证发现，方法的相对排名随微调深度变化而波动。研究结果表明，深度适应会导致更大的更新幅度和遗忘，呼吁建立将可训练深度纳入考量的评估协议。",
+    "one_sentence": "本文提出将微调机制（即可训练参数子空间深度）作为持续学习评估中的关键变量，揭示了不同方法在不同微调深度下的相对性能排名并不稳定。"
   },
   {
     "title": "Seeing Without Eyes: 4D Human-Scene Understanding from Wearable IMUs",
     "url": "http://arxiv.org/abs/2604.21926v1",
     "abstract_en": "Understanding human activities and their surrounding environments typically relies on visual perception, yet cameras pose persistent challenges in privacy, safety, energy efficiency, and scalability. We explore an alternative: 4D perception without vision. Its goal is to reconstruct human motion and 3D scene layouts purely from everyday wearable sensors. For this we introduce IMU-to-4D, a framework that repurposes large language models for non-visual spatiotemporal understanding of human-scene dynamics. IMU-to-4D uses data from a few inertial sensors from earbuds, watches, or smartphones and predicts detailed 4D human motion together with coarse scene structure. Experiments across diverse human-scene datasets show that IMU-to-4D yields more coherent and temporally stable results than SoTA cascaded pipelines, suggesting wearable motion sensors alone can support rich 4D understanding.",
     "date": "2026-04-23",
-    "summary_cn": "针对视觉感知在隐私和能效上的局限，本文提出 IMU-to-4D 框架，利用大语言模型处理耳塞、手表等可穿戴传感器的惯性数据，纯非视觉地重建人类 4D 运动及粗略场景结构。实验表明，该方法比现有级联方案更具时空一致性，证明了仅靠运动传感器实现丰富 4D 理解的可行性。",
+    "summary_cn": "针对视觉感知在隐私和能效上的局限，本文提出 IMU-to-4D 框架，利用大语言模型处理耳机、手表等可穿戴传感器的惯性数据。该方法能纯靠非视觉输入重建详细的人类 4D 运动及粗略场景结构，实验表明其比现有级联方案更具连贯性和时序稳定性。",
     "one_sentence": "本文提出了 IMU-to-4D 框架，通过复用大语言模型，仅利用日常可穿戴惯性传感器数据即可实现无需视觉的人类运动与 3D 场景布局的 4D 重建。"
   }
 ]
