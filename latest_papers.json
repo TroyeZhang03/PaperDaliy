@@ -4,39 +4,39 @@
     "url": "http://arxiv.org/abs/2606.06495v1",
     "abstract_en": "We construct data-driven solutions to the Hubble tension, in light of recent data from the Atacama Cosmology Telescope (ACT DR6) and the Dark Energy Spectroscopic Instrument (DESI DR2). We search for the minimal modification to the recombination history through a time-varying electron mass $m_e(z)$ that increases the best-fit $H_0$ inferred from CMB data toward the SH0ES value, without worsening the fit to the data. Using Planck and ACT data including lensing, we find a perturbative modification to $m_e(z)$ that fully resolves the Hubble tension, with the solution sharing the same qualitative oscillatory structure as in previous work using Planck data alone, demonstrating its robustness to the inclusion of more precise and independent CMB data. As a byproduct, the solution also eases the $S_8$ tension. Once DESI DR2 BAO data are added, however, perturbative modifications to $m_e(z)$ cannot fully resolve the Hubble tension. This reflects the same fundamental limitation: raising $H_0$ by modifying recombination generically lowers $Ω_m$, being inconsistent with late-time cosmological observations.",
     "date": "2026-06-04",
-    "summary_cn": "本文利用近期ACT DR6和DESI DR2数据，探索通过随时间变化的电子质量（m_e(z)）来修改复合历史，以缓解哈勃张力。研究发现，使用Planck和ACT数据（含透镜效应）时，一种微扰性m_e(z)振荡结构可完全解决该张力，并同时缓解S_8矛盾；然而加入DESI DR2的BAO数据后，该方法无法完全解决，原因在于通过修改复合提高H_0会降低Ω_m，与晚期宇宙观测不一致。",
-    "one_sentence": "本文通过引入随时间变化的电子质量扰动来修改复合历史，利用最新CMB数据（Planck+ACT DR6）成功缓解了哈勃张力，但加入DESI DR2重子声学振荡数据后无法完全解决该张力。"
+    "summary_cn": "AI 接口暂时不可用，请阅读下方英文摘要。",
+    "one_sentence": "生成失败"
   },
   {
     "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
     "url": "http://arxiv.org/abs/2606.06494v1",
     "abstract_en": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the pre-trained weights as a fixed reference frame to learn a low-rank update applied to the singular value matrix. A soft spectral penalty discourages updates aligned with dominant singular directions, reducing interference while routing fine-grained adaptation into the highly flexible, long-tail spectral coordinates.",
     "date": "2026-06-04",
-    "summary_cn": "本文提出TailLoR，一种基于谱分解的参数高效持续学习方法。它利用预训练权重的奇异基U和V作为固定参考，仅对奇异值矩阵进行低秩更新，并引入软谱惩罚，弱化沿主导奇异方向的更新，从而减少任务间干扰，将精细调适引导至灵活的长尾谱坐标，实现高效的持续学习。",
-    "one_sentence": "本文提出TailLoR方法，通过将预训练权重的奇异基U和V作为固定参考框架，仅在奇异值矩阵上施加低秩更新，并引入软谱惩罚抑制主导奇异方向上的更新，从而在持续学习中实现低干扰、高灵活性的微调。"
+    "summary_cn": "基于谱分解的参数高效微调方法推动了持续学习的发展。本文引入TailLoR，该方法使用预训练权重的奇异基U和V作为固定参考框架，学习应用于奇异值矩阵的低秩更新。一种软光谱惩罚机制抑制与主奇异方向对齐的更新，从而减少干扰，同时将细粒度适应引导到高度灵活的长尾谱坐标中，实现了在持续学习中的高效知识迁移与遗忘缓解。",
+    "one_sentence": "本文提出TailLoR方法，利用预训练权重的奇异基作为固定参考系，仅学习奇异值矩阵的低秩更新，并通过软光谱惩罚抑制与主奇异方向对齐的更新，从而在持续学习中实现高效的细粒度适应与干扰减少。"
   },
   {
     "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
     "url": "http://arxiv.org/abs/2606.06493v1",
     "abstract_en": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.",
     "date": "2026-06-04",
-    "summary_cn": "针对仿人机器人全身控制中命令空间设计的关键问题，本文提出了HANDOFF，一种基于紧凑显式接口的全身控制器。该接口兼具直觉性、通用性和表达力。通过上下文条件门控机制下的多教师KL蒸馏，HANDOFF将运动跟踪、行走和跌倒恢复三个互补专家的知识整合为混合专家学生模型。在Unitree G1机器人上的实验表明，HANDOFF在速度跟踪和鲁棒操作工作空间方面达到最优水平，并基于VLM智能体规划器实现了自然语言驱动的硬件部署，无需任务特定数据或控制器微调。",
-    "one_sentence": "本文提出了一种名为HANDOFF的紧凑、直观且通用的全身控制接口，通过多教师知识蒸馏和混合专家模型，使仿人机器人无需任务特定数据或控制器微调即可执行多样化操作任务。"
+    "summary_cn": "本文针对人形机器人在现实世界部署中的命令空间选择问题，提出了一种紧凑、直观且通用的接口HANDOFF及其对应的全身控制器。该控制器通过多教师KL蒸馏和上下文门控混合专家机制，融合了全身运动跟踪、locomotion和跌落恢复三种专业技能。在Unitree G1机器人上，HANDOFF达到了最先进的速率跟踪性能，并提供了最大的鲁棒操作工作空间之一，通过自然语言驱动的任务 rollout 验证了其硬件可行性。",
+    "one_sentence": "本文提出了一种名为HANDOFF的紧凑显式接口与单一人形全身控制器，通过多教师KL蒸馏和上下文门控混合专家机制，融合全身运动跟踪、 locomotion和跌落恢复三种专业技能，实现了直观、通用且表达能力强的多样化操作技能。"
   },
   {
     "title": "Code2LoRA: Hypernetwork-Generated Adapters for Code Language Models under Software Evolution",
     "url": "http://arxiv.org/abs/2606.06492v1",
     "abstract_en": "Code language models need repository-level context to resolve imports, APIs, and project conventions. Existing methods inject this knowledge as long inputs (retrieved through RAG or dependency analysis) or through per-repository fine-tuning and LoRA -- costly at repository scale and brittle to evolving codebases. We introduce Code2LoRA, a hypernetwork framework that generates repository-specific LoRA adapters, effectively injecting repository knowledge with zero inference-time token overhead. Code2LoRA supports two usage scenarios: Code2LoRA-Static converts a single repository snapshot into an adapter, suitable for comprehension of stable codebases; while Code2LoRA-Evo maintains an adapter backed by a GRU hidden state updated per code diff, suitable for active development of evolving codebases. To evaluate Code2LoRA against parameter-efficient fine-tuning baselines, we build RepoPeftBench, a benchmark of 604 Python repositories with two tracks: a static track with 40K training and 12K test assertion-completion tasks, and an evolution track with 215K commit-derived training and 87K commit-derived test tasks. On the static track, Code2LoRA-Static achieves 63.8% cross-repo and 66.2% in-repo exact match, matching the per-repository LoRA upper bound; on the evolution track, Code2LoRA-Evo achieves 60.3% cross-repo exact match (+5.2 pp over a single shared LoRA). Code2LoRA's code can be found at https://anonymous.4open.science/r/code2lora-6857; the model checkpoints and RepoPeftBench datasets can be found at https://huggingface.co/code2lora.",
     "date": "2026-06-04",
-    "summary_cn": "Code2LoRA是一种超网络框架，用于为代码语言模型注入仓库级上下文。它通过生成仓库特定的LoRA适配器，避免了传统方法中长输入或逐个仓库微调的高成本。该框架支持静态快照（Code2LoRA-Static）和演化代码库（Code2LoRA-Evo，基于GRU隐藏状态更新）。在包含604个Python仓库的RepPeftBench基准上，静态跟踪达到了63.8%的跨仓库精确匹配，逼近逐个仓库LoRA的上限；演化跟踪则实现了60.3%的跨仓库精确匹配，比单一共享LoRA提升5.2个百分点。",
-    "one_sentence": "本文提出Code2LoRA，一个超网络框架，通过生成仓库特定的LoRA适配器来注入代码仓库知识，从而在推理时实现零额外令牌开销。"
+    "summary_cn": "本文提出了Code2LoRA框架，通过超网络为每个代码仓库生成专用的LoRA适配器，从而在不增加推理时令牌开销的情况下注入仓库级上下文知识。Code2LoRA支持静态快照生成（Code2LoRA-Static）和基于代码差异的演化更新（Code2LoRA-Evo）。在包含604个Python仓库的RepPeftBench基准上，静态和演化跟踪均取得了与逐仓库微调相当或更好的精确匹配性能。",
+    "one_sentence": "本文提出Code2LoRA，一种通过超网络为每个代码仓库动态生成LoRA适配器的方法，无需推理时额外输入令牌即可注入仓库级上下文知识。"
   },
   {
     "title": "TempoVLA: Learning Speed-Controllable Vision-Language-Action Policies",
     "url": "http://arxiv.org/abs/2606.06491v1",
     "abstract_en": "Robot manipulation alternates between low-risk transit phases that call for fast execution and high-risk contact stages that demand slow, precise motion. Yet existing Vision-Language-Action models (VLAs) only inherit a single fixed speed from training demonstrations. Prior efforts to accelerate VLAs through model compression, KV-cache reuse, or reinforcement learning only shift the policy from one fixed speed to another, and leave deceleration almost unexplored. We observe that the magnitude of each predicted action already governs how fast the robot moves, opening a direct route to controllable execution speed. We turn this observation into TempoVLA, a single VLA whose execution speed is controlled by an explicit condition. TempoVLA combines two coupled components. (1) A data-side Variable-Speed Trajectory Augmentation (VSTA) that re-times demonstration to any target speed by merging or splitting actions while preserving its motion semantics. (2) A model-side conditioning mechanism that feeds the speed to the policy. Statistics show that VSTA reaches the requested speed with negligible motion error. Experiments in simulation and on real-world tasks demonstrate that TempoVLA achieves flexible speed control in both directions, while VSTA additionally boosts the default $1\\times$ performance via better data utilization. Furthermore, by cooperating with a large multimodal model, TempoVLA realizes dynamic speed control, accelerating through low-risk phases and decelerating for high-risk ones.",
     "date": "2026-06-04",
-    "summary_cn": "TempoVLA是一种创新的视觉-语言-动作模型，通过速度条件控制和变速度轨迹增强技术，实现了机器人执行速度的灵活调节。它能在低风险阶段快速运动，在高风险接触阶段慢速精确运动，同时通过数据利用提升默认速度性能，并可与大型多模态模型协作实现动态速度控制。",
-    "one_sentence": "本文提出TempoVLA，通过数据增强与条件机制实现对机器人执行速度的灵活双向控制，解决了现有视觉-语言-动作模型仅支持单一固定速度的问题。"
+    "summary_cn": "本文针对现有视觉-语言-动作模型只能以固定速度执行的问题，提出TempoVLA框架。它包含数据侧的可变速度轨迹增强（VSTA）和模型侧的速度条件机制，通过重新定时演示轨迹或合并/分割动作来匹配目标速度，同时保持运动语义。实验表明，TempoVLA实现了灵活的双向速度控制，与大型多模态模型协作时，可在低风险阶段加速、高风险阶段减速，显著提升执行效率与安全性。",
+    "one_sentence": "本文提出TempoVLA，通过可变速度轨迹增强和条件机制，使单一视觉-语言-动作模型能够根据风险阶段灵活控制执行速度，实现高速通过低风险阶段和低速通过高风险阶段。"
   }
 ]
